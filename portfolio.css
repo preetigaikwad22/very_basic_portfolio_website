@@ -1,0 +1,233 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+  background-color: #be3144;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#nav-list {
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  list-style: none;
+  padding-top: 10px;
+}
+
+#nav-list a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  padding: 5rem 2rem 1.1rem;
+}
+
+#nav-list li a:hover {
+  background-color: #45567d;
+}
+
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-color: #000;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+#welcome-section h1 {
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+#welcome-section p {
+  font-style: italic;
+  color: #be3144;
+  font-size: 2rem;
+  font-weight: 100;
+  position: absolute;
+  top: 450px;
+  left: 650px;
+}
+
+.projects {
+  text-align: center;
+  background-color: #45567d;
+  margin: 0;
+  padding: 8rem 2rem;
+}
+
+.projects h2 {
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-thickness: 1px;
+  font-size: 40px;
+  padding-bottom: 50px;
+}
+
+.project-grid a {
+  text-decoration: none;
+}
+
+.project-img {
+  height: calc(100% - 4.8rem);
+  width: 432px;
+  object-fit: cover;
+  margin: -1.5px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding: 30px;
+  grid-gap: 2rem;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.project-grid .project-title {
+  color: white;
+  width: 393px;
+  background-color: #303841;
+  font-size: 20px;
+  margin: -1.7px;
+  margin-left: 5px;
+  padding: 1rem 1em;
+}
+
+#projects .project-tile .code {
+  opacity: 0%;
+  padding: 0 5px;
+}
+
+#projects .project-tile:hover .code {
+  opacity: 100%;
+  color: rgb(231, 119, 78);
+  transition: opacity 0.2s ease-in;
+}
+
+button {
+  cursor: pointer;
+  height: 50px;
+  width: 150px;
+  position: absolute;
+  left: 700px;
+  top: 2160px;
+  font-size: 20px;
+  background-color: #303841;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  background-color: #be3144;
+  transition: 0.3s ease-in;
+}
+
+#profile-link-section {
+  background-color: #303841;
+}
+
+#profile-link-section #profile-link-header {
+  text-align: center;
+  justify-content: center;
+  padding-top: 170px;
+}
+
+#profile-link-header h1 {
+  font-size: 4rem;
+  color: white;
+}
+
+#profile-link-header p {
+  font-style: italic;
+  position: absolute;
+  left: 595px;
+  top: 2659px;
+  font-size: 25px;
+  color: white;
+  padding-bottom: 0px;
+}
+
+#profile-link-icons {
+  text-align: center;
+  padding-top: 70px;
+}
+
+#profile-link-icons a {
+  text-decoration: none;
+  color: white;
+  padding: 25px;
+  font-size: 25px;
+  margin-top: 50px;
+  text-shadow: 3px 3px 3px black;
+}
+
+#profile-link-icons a:hover {
+  padding-top: 10px;
+}
+
+#profile-link-section hr {
+  color: #be3144;
+  border-top: 5px solid #be3144;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  background-color: #303841;
+  position: absolute;
+  top: 2957px;
+  width: 100%;
+}
+
+#footer #para1 {
+  color: white;
+  padding: 30px;
+  padding-left: 100px;
+  font-family: "Raleway", sans-serif;
+  font-size: 21px;
+  font-weight: lighter;
+}
+
+#footer #para2 {
+  color: white;
+  font-size: 21px;
+  position: absolute;
+  top: 30px;
+  left: 1000px;
+}
+
+#footer #para2 a {
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (min-width: 375) {
+  #nav-list a {
+    font-size: 1.8em;
+    padding: 5rem 2.5rem 1.1rem; 
+  }
+
+  .project-img {
+    height: calc(100% - 5.8rem);
+    width: 480px;
+  }
+
+}
+
